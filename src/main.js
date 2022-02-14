@@ -1,5 +1,7 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from './vue-router'
+// switch commented lines to use official vue-router
+// import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 import ContentOne from './views/ContentOne.vue'
 import ContentTwo from './views/ContentTwo.vue'
