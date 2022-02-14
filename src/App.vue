@@ -8,11 +8,11 @@ const showing = ref(false)
     <button @click="showing = !showing">Toggle showing</button>
 
     <h1>With transition</h1>
-    <router-view #default="{ Component, Components }">
+    <router-view #default="{ Component }">
       <transition>
         <div v-if="showing">
-          <component :is="Components.default" />
-          <component :is="Components.footer" />
+          <component :is="Component" />
+          <!-- <component :is="Components.footer" /> -->
         </div>
       </transition>
     </router-view>
